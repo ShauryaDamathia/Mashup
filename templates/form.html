@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mashup</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mashup Service</h1>
+        <form id="mashupForm">
+            <label for="singer">Singer Name:</label>
+            <input type="text" id="singer" name="singer" required>
+
+            <label for="num_videos"># of videos:</label>
+            <input type="number" id="num_videos" name="num_videos" required min="1" max="50">
+
+            <label for="duration">Duration (seconds):</label>
+            <input type="number" id="duration" name="duration" required min="20" max="300">
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+            <input type="submit" value="Submit">
+
+            <div id="loading">Processing your request...</div>
+            <div id="message"></div>
+        </form>
+    </div>
+</body>
+</html>
